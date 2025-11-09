@@ -13,7 +13,6 @@
       padding: 50px;
       line-height: 1.6;
       text-align: center;
-      cursor: pointer;
     }
 
     strong {
@@ -27,50 +26,33 @@
       color: #ccc;
     }
 
+    button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    button:hover {
+      background-color: #e5e5e5;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
     .hint {
       font-size: 0.9rem;
       color: gray;
-      margin-top: 20px;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
   <strong>
-    The soul is neither born, nor does it ever die; nor having once existed, does it ever cease to be.
-    The soul is without birth, eternal, immortal, and ageless. It is not destroyed when the body is destroyed.
-  </strong>
-
-  <p>
-    <em>
-      na jāyate — is not born; mriyate — dies; vā — or; kadāchit — at any time; na — not; ayam — this; bhūtvā — having once existed;
-      bhavitā — will be; vā — or; na — not; bhūyaḥ — further; ajaḥ — unborn; nityaḥ — eternal; śhāśhvataḥ — immortal; ayam — this;
-      purāṇaḥ — the ancient; na hanyate — is not destroyed; hanyamāne — is destroyed; śharīre — when the body.
-    </em>
-  </p>
-
-  <p class="hint">(Click anywhere to play or pause the verse)</p>
-
-  <audio id="audio" preload="auto">
-    <source src="bgverse20.mp3" type="audio/mpeg">
-  </audio>
-
-  <script>
-    const audio = document.getElementById("audio");
-    let hasPlayed = false;
-
-    document.body.addEventListener("click", () => {
-      if (!hasPlayed) {
-        audio.play().catch(err => console.log("Playback blocked:", err));
-        hasPlayed = true;
-      } else {
-        if (audio.paused) {
-          audio.play();
-        } else {
-          audio.pause();
-        }
-      }
-    });
-  </script>
-</body>
-</html>
-
+    The soul is neither b
