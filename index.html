@@ -10,7 +10,7 @@
       background-color: black;
       color: white;
       margin: 0;
-      padding: 40px;
+      padding: 50px;
       line-height: 1.6;
       text-align: center;
       cursor: pointer;
@@ -30,7 +30,7 @@
     .hint {
       font-size: 0.9rem;
       color: gray;
-      margin-top: 10px;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -42,13 +42,13 @@
 
   <p>
     <em>
-      na jāyate—is not born; mriyate—dies; vā—or; kadāchit—at any time; na—not; ayam—this; bhūtvā—having once existed;
-      bhavitā—will be; vā—or; na—not; bhūyaḥ—further; ajaḥ—unborn; nityaḥ—eternal; śhāśhvataḥ—immortal; ayam—this;
-      purāṇaḥ—the ancient; na hanyate—is not destroyed; hanyamāne—is destroyed; śharīre—when the body.
+      na jāyate — is not born; mriyate — dies; vā — or; kadāchit — at any time; na — not; ayam — this; bhūtvā — having once existed;
+      bhavitā — will be; vā — or; na — not; bhūyaḥ — further; ajaḥ — unborn; nityaḥ — eternal; śhāśhvataḥ — immortal; ayam — this;
+      purāṇaḥ — the ancient; na hanyate — is not destroyed; hanyamāne — is destroyed; śharīre — when the body.
     </em>
   </p>
 
-  <p class="hint">(Click anywhere to play or pause audio)</p>
+  <p class="hint">(Click anywhere to play or pause the verse)</p>
 
   <audio id="audio" preload="auto">
     <source src="bgverse20.mp3" type="audio/mpeg">
@@ -61,7 +61,7 @@
 
     document.body.addEventListener("click", () => {
       if (!audio.src) {
-        alert("Audio file not found. Make sure bgverse20.mp3 is in the same folder.");
+        alert("Audio file not found. Make sure bgverse20.mp3 is in the same folder as index.html");
         return;
       }
 
